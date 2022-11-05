@@ -1,0 +1,22 @@
+import java.awt.*;
+public class SimpleDrawing {
+  public static void main(String[] args) {
+    DrawingPanel panel = new DrawingPanel(300,200);
+    Graphics g = panel.getGraphics();
+    g.setColor(Color.GREEN);
+    g.fillRect(50, 20, 200, 150);
+    g.setColor(Color.BLACK);
+    g.drawRect(50, 20, 200, 150);
+    g.setColor(Color.RED);
+    g.fillOval(75, 20, 150, 150);
+    g.setColor(Color.BLACK);
+    g.drawOval(75, 20, 150, 150);
+    g.setColor(Color.YELLOW);
+    g.drawLine(50, 20, 250, 170);
+    g.setColor(Color.YELLOW);
+    g.drawLine(250, 20, 50, 170);
+    g.setColor(Color.MAGENTA);
+    g.drawString("Michelle Okeowo", 25, 15);
+  }
+}
+    
