@@ -1,0 +1,42 @@
+import java.awt.*;
+import java.util.concurrent.TimeUnit ;
+public class SimpleDrawing {
+  public static void main(String[] args) throws InterruptedException{
+    DrawingPanel panel = new DrawingPanel(1200,700);
+    Graphics g = panel.getGraphics();
+    g.setColor(new Color (157, 27, 27));
+    g.fillRect(10, 0, 1170, 750);
+    g.setColor(Color.BLACK);
+    g.drawRect(10, 0, 1170, 750);
+    g.setColor(new Color (127, 90, 57));
+    g.fillRect(582, 5, 80, 95);
+    TimeUnit.SECONDS.sleep(1);
+    Color dorange = new Color (255, 160, 16);
+    TimeUnit.SECONDS.sleep(1);
+    g.setColor(new Color (255, 160, 16));
+    g.fillOval(300, 115, 280, 415);
+    TimeUnit.SECONDS.sleep(1);
+    g.setColor(new Color (255, 160, 16));
+    g.fillOval(700, 115, 260, 415);
+    TimeUnit.SECONDS.sleep(1);
+    g.setColor(new Color (255, 160, 16));
+    g.fillOval(425, 65, 385, 523);
+    TimeUnit.SECONDS.sleep(1);
+    g.setColor(new Color (255, 160, 16));
+    g.fillOval(360, 80, 290, 490);
+    g.fillOval(590, 87, 315, 482);
+    TimeUnit.SECONDS.sleep(1);
+    g.setColor(Color.BLACK);
+    g.fillPolygon(new int[] {460, 520, 580}, new int[] {320, 220, 320}, 3);
+    g.fillPolygon(new int[] {680, 740, 800}, new int[] {320, 220, 320}, 3);
+    g.setColor(Color.BLACK);
+    TimeUnit.SECONDS.sleep(1);
+    g.setColor(Color.BLACK);
+    g.fillOval(400,350,450,120);
+    g.setFont(new Font("CosmicSans", Font.PLAIN, 30));
+    g.drawString("Jacko", 150, 50);
+    TimeUnit.SECONDS.sleep(1);
+    g.drawString("It is the not the strongest of the species that survive,", 70,610);
+    g.drawString(" nor the most intelligent, but the ones most responsive to change. -Charles Darwin",70,650);
+  }
+}
