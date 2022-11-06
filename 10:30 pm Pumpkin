@@ -1,0 +1,31 @@
+import java.awt.*;
+public class SimpleDrawing {
+  public static void main(String[] args) {
+    DrawingPanel panel = new DrawingPanel(1200,700);
+    Graphics g = panel.getGraphics();
+    g.setColor(new Color (157, 27, 27));
+    g.fillRect(50, 0, 1100, 600);
+    g.setColor(Color.BLACK);
+    g.drawRect(50, 0, 1100, 600);
+    g.setColor(new Color (127, 90, 57));
+    g.fillRect(582, 5, 80, 95);
+    Color dorange = new Color (255, 160, 16);
+    g.setColor(new Color (255, 160, 16));
+    g.fillOval(300, 95, 625, 480);
+    g.setColor(new Color (255, 160, 16));
+    g.fillOval(300, 115, 280, 415);
+    g.setColor(new Color (255, 160, 16));
+    g.fillOval(700, 115, 260, 415);
+    g.setColor(new Color (255, 160, 16));
+    g.fillOval(425, 65, 385, 523);
+    g.setColor(new Color (255, 160, 16));
+    g.fillOval(360, 80, 290, 490);
+    g.fillOval(590, 87, 315, 482);
+    g.setColor(Color.BLACK);
+    g.fillPolygon(new int[] {460, 520, 580}, new int[] {320, 220, 320}, 3);
+    g.fillPolygon(new int[] {680, 740, 800}, new int[] {320, 220, 320}, 3);
+    g.setColor(Color.MAGENTA);
+    g.setFont(new Font("ComicSans", Font.PLAIN, 30));
+    g.drawString("Jacko", 200, 550);
+  }
+}
